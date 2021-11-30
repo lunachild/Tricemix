@@ -12,11 +12,11 @@
 
 <PopupTemplate>
     <main>
-        <h2>Enter Secret Seed to Send</h2>
+        <h2>Confirm the payment</h2>
         <form action="">
             <div class="field">
                 <input type="text" name="seed" class="input" placeholder=" " bind:value="{seed}" />
-                <label for="seed" class="label">Secret Seed</label>
+                <label for="seed" class="label">Your secret seed</label>
             </div>
             <div class="buttons">
                 <Button on:click={sign}>Sign</Button>
@@ -105,7 +105,6 @@
 
     /* Label animation */
     .label {
-        z-index: -1;
         position: absolute;
         transform: translateY(-2rem);
         transform-origin: 0%;

@@ -10,8 +10,8 @@
 </script>
 
 <div class="container">
-    <div>{asset}</div>
-    <div>{balanceRounded}</div>
+    <div>Amount</div>
+    <div>{balanceRounded} {asset}</div>
 </div>
 
 <style>

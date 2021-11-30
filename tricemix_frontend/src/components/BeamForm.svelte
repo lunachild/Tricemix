@@ -20,11 +20,11 @@
         <div class="inputs">
             <div class="field">
                 <input type="text" name="destination" class="input" placeholder=" " bind:value="{destination}" />
-                <label for="email" class="label">Destination Account or Email Address</label>
+                <label for="email" class="label">Email / Account ID</label>
             </div>
             <div class="field" id="value">
                 <input type="text" name="value" class="input" placeholder=" " />
-                <label for="email" class="label">Value</label>
+                <label for="email" class="label">Amount</label>
             </div>
                 <select name="token" id="token">
                     {#each $balances as bal, i}
@@ -43,12 +43,9 @@
 <style>
     main {
         border-radius: 2em;
-        border: 1px solid var(--light);
-        background-color: var(--middle-dark);
         color: white;
         padding: 1.3em;
         padding-top: 0.3em;
-        filter: drop-shadow(0px 0px 2px var(--middle));
         box-sizing: border-box;
         height: 260px;
     }

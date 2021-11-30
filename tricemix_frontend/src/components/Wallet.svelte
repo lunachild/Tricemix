@@ -68,11 +68,8 @@
 
     main {
         border-radius: 2em;
-        border: 1px solid var(--light);
-        background-color: var(--middle-dark);
         color: white;
         padding: 1.3em;
-        filter: drop-shadow(0px 0px 2px var(--middle));
         box-sizing: border-box;
     }
 

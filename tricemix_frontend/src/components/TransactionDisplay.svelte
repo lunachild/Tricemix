@@ -47,8 +47,8 @@
 </script>
 
 <div class="container">
+    <div>Dated</div>
     <div>{date}</div>
-    <div>Transaction</div>
 </div>
 
 <style>

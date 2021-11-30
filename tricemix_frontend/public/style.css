@@ -1,10 +1,10 @@
 :root {
-    --black: rgb(24, 24, 24);
+    --black: #112f42;
     --white: #eee;
     --green: #22b573;
     --blue: #278dc1;
     --middle: #25a09b;
-    --light: #7ce6e2;
+    --light: #f4e196;
 
     --green-dark: #2f3d38;
     --blue-dark: #2f434d;
@@ -30,9 +30,6 @@ h1 {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-color: var(--black);
     color: white;
     box-sizing: border-box;
@@ -65,18 +62,4 @@ input {
 
 .gradient-stop-2 {
     stop-color: var(--blue);
-}
-
-.cls-1 {
-    opacity: 0;
-    fill: url(#linear-gradient);
-}
-
-.cls-2 {
-    fill: white !important; /* can be removed for gradient */
-    /* opacity: 0.76; */
-}
-
-.cls-3 {
-    fill: white !important;
 }

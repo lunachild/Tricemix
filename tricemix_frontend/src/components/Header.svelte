@@ -3,7 +3,8 @@
 </script>
 
 <header>
-    <Logo width="200px" style="fill:white" />
+    <a href="/"><Logo width="50px" style="fill:white" /></a>
+    <h5>Tricemix Demo</h5>
 </header>
 
 <style>
@@ -11,9 +12,8 @@
         width: 100%;
         position: sticky;
         top: 0;
-        background: var(--middle);
-        background: linear-gradient(-150deg, rgba(34, 181, 115, 1) 0%, rgba(39, 141, 193, 1) 100%);
-        filter: drop-shadow(0px 0px 8px var(--middle));
+        background: #F2994A;  /* fallback for old browsers */
+        background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         display: flex;
         padding: 1em;
         margin: 0 auto;
