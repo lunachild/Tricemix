@@ -55,14 +55,10 @@
 <style>
     .bg {
         position: fixed;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.6);
-        z-index: 1;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-top: 18em;
+        top: 50%;
+        left: 50%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
     }
 
     .popup {
@@ -72,7 +68,6 @@
         border: 1px solid var(--light);
         background-color: var(--middle-dark);
         border-radius: 2em;
-        filter: drop-shadow(0px 0px 7px var(--middle)) drop-shadow(0px 0px 15px black);
         box-sizing: border-box;
         color: white;
     }

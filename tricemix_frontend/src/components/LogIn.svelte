@@ -26,7 +26,6 @@
     }
 
     function logOutClick() {
-        console.log("Logged Out");
         loggedIn.update((li) => (!li));
         wantsToLogIn = false;
         logInKey.set("");
@@ -35,20 +34,14 @@
     }
 
     function logInClick() {
-        console.log("Log In Button Clicked");
-
         logInKey.set(key);
         accountTest().then(x => {
-            console.log(x);
             if (x) {
-                console.log("gj")
                 loggedIn.update((li) => (!li));
                 wantsToLogIn = false;
-                console.log(`${$logInKey} logged in`);
                 tryAgain = false;
             } else {
                 tryAgain = true;
-                console.log("try again bucko")
             }
         })
     }

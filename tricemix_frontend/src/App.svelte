@@ -8,6 +8,13 @@
 	import {
 		loggedIn
 	} from './store'
+
+	import FedPopup from './components/FedPopup.svelte';
+	import FedForm from './components/FedForm.svelte';
+
+	import {
+		sending, sent
+	} from "./store";
 </script>
 
 <Header />
@@ -20,6 +27,32 @@
 		</article>
 	</div>
 	<Popup />
+
+	{#if $sending}
+	<div>
+		<article class="ui">
+			<div>
+				Loading...
+			</div>
+		</article>
+	</div>
+	{:else if $sent}
+	<div>
+		<article class="ui">
+			<div>
+				Your were successfully added to Tricemix Service.
+			</div>
+		</article>
+	</div>
+	{:else}
+	<div>
+		<article class="ui">
+			<FedForm />
+		</article>
+	</div>
+	{/if}
+
+	<FedPopup />
 {:else}
 	<div>
 		<WalletPreview />

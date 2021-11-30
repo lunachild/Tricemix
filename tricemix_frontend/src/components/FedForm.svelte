@@ -37,7 +37,8 @@
 </script>
 
 <div class="everything">
-    <h2>Email Address - Digitalbits Account Linking</h2>
+    <h2>Tricemix Federation Service Interface</h2>
+    <p>Want to link your email address to receive payments seamlessly?</p>
     <main>
         <form action="">
             <div class="inputs">
@@ -50,7 +51,7 @@
                     <label for="id" class="label">Digitalbits Account ID</label>
                 </div>
             </div>
-            <Button on:click={signForm}>Submit</Button>
+            <Button on:click={signForm}>Link Account</Button>
         </form>
     </main>
 </div>
@@ -58,12 +59,9 @@
 <style>
     main {
         border-radius: 2em;
-        border: 1px solid var(--light);
-        background-color: var(--middle-dark);
         color: white;
         padding: 1.3em;
         padding-top: 0.3em;
-        filter: drop-shadow(0px 0px 2px var(--middle));
         box-sizing: border-box;
         height: 260px;
     }
@@ -78,7 +76,7 @@
     }
 
 
-    h2 {
+    h2, p {
         text-align: center;
     }
 
