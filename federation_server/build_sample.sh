@@ -7,6 +7,6 @@ createdb federation_sample
 psql federation_sample -e <<-EOS
   CREATE TABLE people (id character varying, name character varying, domain character varying);
   INSERT INTO people (id, name, domain) VALUES 
-    ('GD2GJPL3UOK5LX7TWXOACK2ZPWPFSLBNKL3GTGH6BLBNISK4BGWMFBBG', 'bob', 'digitalbits.io'),
-    ('GCYMGWPZ6NC2U7SO6SMXOP5ZLXOEC5SYPKITDMVEONLCHFSCCQR2J4S3', 'alice', 'digitalbits.io');
+    ('GBW63SL3JHECAFJAGOCYFHL4D5ZQ6OVMVV5E7WPTSXKUGQ6TRT2J3IMY', 'megha', 'digitalbits.io'),
+    ('GBAZNR56HF33YM46Z4RD23LYIK3MJRDCAJ5MZAECRLHHWWXNY23ECZBL', 'raj', 'digitalbits.io');
 EOS
