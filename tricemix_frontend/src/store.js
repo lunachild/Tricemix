@@ -78,3 +78,22 @@ export const accountTest = async () => {
             return false;
         })
 }
+
+export const CreateTestAccount = async () => {
+    const pair = DigitalBitsSdk.Keypair.random();
+
+    try {
+        const response = await fetch(
+        `https://friendbot.testnet.digitalbits.io?addr=${encodeURIComponent(
+            pair.publicKey(),
+        )}`,
+        );
+        const responseJSON = await response.json();
+        console.log("SUCCESS! You have a new account :)\n", responseJSON);
+        console.log("Seed: " + pair.secret()
+                    + "\n\n"
+                    + "Public key: " + pair.publicKey())
+    } catch (e) {
+        console.error("ERROR!", e);
+    }
+}

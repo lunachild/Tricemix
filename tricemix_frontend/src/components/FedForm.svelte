@@ -15,8 +15,6 @@
     let idValid = true;
 
     function signForm() {
-        console.log(`email is ${emailu}`);
-        console.log(`id is ${idu}`);
         const eregex = new RegExp('^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$');
         if (eregex.test(emailu)) {
             emailValid = true;

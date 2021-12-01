@@ -1,13 +1,21 @@
 <script>
     import Logo from '../../public/assets/logoColour.svg'
+    import LogIn from './LogIn.svelte';
+    import Create from './Create.svelte';
 </script>
 
 <header>
     <a href="/"><Logo width="50px" style="fill:white" /></a>
-    <h5>Tricemix Demo</h5>
+    <div>
+        <LogIn />
+        <Create />
+    </div>
 </header>
 
 <style>
+    div {
+        display: flex
+    }
     header {
         width: 100%;
         position: sticky;

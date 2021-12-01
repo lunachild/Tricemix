@@ -41,9 +41,9 @@
 
     .lib {
         margin-right: 1em;
-        width: 7rem;
+        width: 10rem;
         height: 3em;
-        font-size: 1.1em;
+        font-size: 0.8em;
         font-weight: 700;
         font-family: "Quicksand", sans-serif;
     }
