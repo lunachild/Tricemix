@@ -1,5 +1,10 @@
 # Tricemix: Decentralized Referral Marketing Solution
 
+<p align="center">
+<img alt="Jiraffe" src="https://raw.githubusercontent.com/lunachild/Tricemix/main/tricemix_frontend/public/assets/favicon.png"><br>
+<b>Jiraffe - One stop place for exploiting all Jira instances in your proximity</b><br>
+</p>
+
 Imagine you're a budding entrepreneur with an amazing product and you want to launch and go live. Now, of course, you'll need to market it and one of the ways is to create a referral marketing campaign, a marketing tactic that makes use of recommendations and word of mouth to grow a business's customer base through the networks of its existing customers.
 
 Before you say, "_Oh cool! I'll set up one right away!_" and runoff, here are some of the things we noticed about the current infrastructure for creating a decent referral program,
